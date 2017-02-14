@@ -46,8 +46,13 @@ public class Address {
     zip = newZip;
   }
 
-}
+  @Override public String toString() {
+    StringBuilder result = new StringBuilder();
+    result.append(street + ", ");
+    result.append(city + ", ");
+    result.append(state + " ");
+    result.append(zip);
+    return result.toString();
+  }
 
-@Override public String toString() {
-  StringBuilder result = new StringBuilder();
 }
