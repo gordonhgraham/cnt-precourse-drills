@@ -10,6 +10,13 @@ public class Address {
   private String state;
   private String zip;
 
+  public Address(String newStreet, String newCity, String newState, String newZip) {
+    street = newStreet;
+    city = newCity;
+    state = newState;
+    zip = newZip;
+  }
+
   public String getStreet() {
     return street;
   }
@@ -30,13 +37,17 @@ public class Address {
     street = newStreet;
   }
   public void setCity(String newCity) {
-    street = newCity;
+    city = newCity;
   }
   public void setState(String newState) {
-    street = newState;
+    state = newState;
   }
   public void setZip(String newZip) {
-    street = newZip;
+    zip = newZip;
   }
 
+}
+
+@Override public String toString() {
+  StringBuilder result = new StringBuilder();
 }
